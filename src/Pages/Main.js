@@ -174,7 +174,7 @@ function Success() {
         {isError&&!isWrong ?
         <Alert variant='danger' className='alert'>Please Login with Spotify again
         <div className="d-flex justify-content-end">
-          <Button as={Link} to={`/`} variant="danger">
+          <Button as={Link} to={`Astronomify/`} variant="danger">
             Go to Login!
           </Button>
         </div>
@@ -220,7 +220,7 @@ function Success() {
         </Container> 
         : null}
         {isCalculated ? 
-        <Button size='lg' as={Link} to={`/final/${averageDate}`} >Astronomify !</Button> :
+        <Button size='lg' as={Link} to={`Astronomify/final/${averageDate}`} >Astronomify !</Button> :
         null}
         </Container>
      );
