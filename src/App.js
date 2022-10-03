@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/main" element={<Main />} />
         <Route path="/final/:date" element={<Final />} />
