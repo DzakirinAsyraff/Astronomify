@@ -8,9 +8,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/Astronomify">
+      <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       <Routes>
-        <Route exact path="/Astronomify" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/main" element={<Main />} />
         <Route path="/final/:date" element={<Final />} />
