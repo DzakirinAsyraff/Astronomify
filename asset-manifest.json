@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Astronomify/static/css/main.276659fe.css",
-    "main.js": "/Astronomify/static/js/main.4281a8f8.js",
+    "main.js": "/Astronomify/static/js/main.cf49e801.js",
     "static/js/787.3d15a2a5.chunk.js": "/Astronomify/static/js/787.3d15a2a5.chunk.js",
     "static/media/home-bg.jpg": "/Astronomify/static/media/home-bg.94110ce2c4c8b07d9479.jpg",
     "static/media/Astronomy.ttf": "/Astronomify/static/media/Astronomy.1dfc5b9606450ebf1b0b.ttf",
@@ -9,11 +9,11 @@
     "static/media/astronomy2.woff": "/Astronomify/static/media/astronomy2.1328ea2c3818da2f34f0.woff",
     "index.html": "/Astronomify/index.html",
     "main.276659fe.css.map": "/Astronomify/static/css/main.276659fe.css.map",
-    "main.4281a8f8.js.map": "/Astronomify/static/js/main.4281a8f8.js.map",
+    "main.cf49e801.js.map": "/Astronomify/static/js/main.cf49e801.js.map",
     "787.3d15a2a5.chunk.js.map": "/Astronomify/static/js/787.3d15a2a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.276659fe.css",
-    "static/js/main.4281a8f8.js"
+    "static/js/main.cf49e801.js"
   ]
 }
