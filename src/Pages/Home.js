@@ -56,7 +56,7 @@ function Home() {
                         {!token ? 
                         <Button variant='success' href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}>Login to Spotify</Button> 
                         :
-                        <Button variant='primary' as={Link} to="/main">Get Started !</Button>
+                        <Button variant='primary' as={Link} to="Astronomify/main">Get Started !</Button>
                         }
                         </div>
                         {
