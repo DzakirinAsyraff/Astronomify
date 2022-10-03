@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.474ca6c4.css",
-    "main.js": "/static/js/main.a6af2c80.js",
-    "static/js/787.3d15a2a5.chunk.js": "/static/js/787.3d15a2a5.chunk.js",
-    "static/media/home-bg.jpg": "/static/media/home-bg.94110ce2c4c8b07d9479.jpg",
-    "static/media/Astronomy.ttf": "/static/media/Astronomy.1dfc5b9606450ebf1b0b.ttf",
-    "static/media/spotify-logo.png": "/static/media/spotify-logo.ff51a04c6f59a2579195.png",
-    "static/media/astronomy2.woff": "/static/media/astronomy2.1328ea2c3818da2f34f0.woff",
-    "index.html": "/index.html",
-    "main.474ca6c4.css.map": "/static/css/main.474ca6c4.css.map",
-    "main.a6af2c80.js.map": "/static/js/main.a6af2c80.js.map",
-    "787.3d15a2a5.chunk.js.map": "/static/js/787.3d15a2a5.chunk.js.map"
+    "main.css": "/Astronomify/static/css/main.276659fe.css",
+    "main.js": "/Astronomify/static/js/main.3058193a.js",
+    "static/js/787.3d15a2a5.chunk.js": "/Astronomify/static/js/787.3d15a2a5.chunk.js",
+    "static/media/home-bg.jpg": "/Astronomify/static/media/home-bg.94110ce2c4c8b07d9479.jpg",
+    "static/media/Astronomy.ttf": "/Astronomify/static/media/Astronomy.1dfc5b9606450ebf1b0b.ttf",
+    "static/media/spotify-logo.png": "/Astronomify/static/media/spotify-logo.ff51a04c6f59a2579195.png",
+    "static/media/astronomy2.woff": "/Astronomify/static/media/astronomy2.1328ea2c3818da2f34f0.woff",
+    "index.html": "/Astronomify/index.html",
+    "main.276659fe.css.map": "/Astronomify/static/css/main.276659fe.css.map",
+    "main.3058193a.js.map": "/Astronomify/static/js/main.3058193a.js.map",
+    "787.3d15a2a5.chunk.js.map": "/Astronomify/static/js/787.3d15a2a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.474ca6c4.css",
-    "static/js/main.a6af2c80.js"
+    "static/css/main.276659fe.css",
+    "static/js/main.3058193a.js"
   ]
 }
