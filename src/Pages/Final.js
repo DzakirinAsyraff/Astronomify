@@ -60,7 +60,7 @@ function Final() {
             </Container>
             }
             <div className='footer-container'>
-                <Button variant="primary" as={Link} to="Astronomify/main">Back to main</Button>
+                <Button variant="primary" as={Link} to="/main">Back to main</Button>
             </div>
         </>
      );

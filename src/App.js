@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/test" element={<Test />} />
-        <Route path="/Astronomify/main" element={<Main />} />
-        <Route path="/Astronomify/final/:date" element={<Final />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/final/:date" element={<Final />} />
       </Routes>
     </div>
   );
