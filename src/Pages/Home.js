@@ -10,7 +10,7 @@ import {SocialIcon} from 'react-social-icons';
 function Home() {
 
     const CLIENT_ID = process.env.REACT_APP_SPOTIFY_KEY;
-    const REDIRECT_URI = "https://dzakirinasyraff.github.io/Astronomify/#/main"
+    const REDIRECT_URI = "https://dzakirinasyraff.github.io/Astronomify/main"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const SCOPE = "user-top-read"
