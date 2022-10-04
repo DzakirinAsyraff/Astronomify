@@ -174,7 +174,7 @@ function Success() {
         {isError&&!isWrong ?
         <Alert variant='danger' className='alert'>Please Login with Spotify again
         <div className="d-flex justify-content-end">
-          <Button as={Link} to='/Astronomify' variant="danger">
+          <Button as={Link} to='/Astronomify/#' variant="danger">
             Go to Login!
           </Button>
         </div>
