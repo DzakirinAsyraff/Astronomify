@@ -55,7 +55,7 @@ function Home() {
                         <div className="home-header-button">
                             <Button variant="outline-light" size="lg" as={Link} to="/test">test</Button>
                         {!token ? 
-                        <Button variant='success' href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}>Login to Spotify</Button> 
+                        <Button variant='success' size="lg" href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}>Login to Spotify</Button> 
                         :
                         <Button variant='primary' as={Link} to="/main">Get Started !</Button>
                         }
