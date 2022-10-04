@@ -53,7 +53,6 @@ function Home() {
                             <h1>ASTRONOMIFY</h1>
                         </div>
                         <div className="home-header-button">
-                            <Button variant="outline-light" size="lg" as={Link} to="/Astronomify/main">test</Button>
                         {!token ? 
                         <Button variant='success' size="lg" href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}>Login to Spotify</Button> 
                         :

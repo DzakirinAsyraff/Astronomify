@@ -220,7 +220,7 @@ function Success() {
         </Container> 
         : null}
         {isCalculated ? 
-        <Button size='lg' as={Link} to={`/final/${averageDate}`} >Astronomify !</Button> :
+        <Button size='lg' as={Link} to={`/Astronomify/final/${averageDate}`} >Astronomify !</Button> :
         null}
         </Container>
      );
