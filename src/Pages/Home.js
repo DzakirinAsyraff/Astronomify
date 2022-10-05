@@ -46,7 +46,7 @@ function Home() {
                     <img alt="spotify-logo" className="spotify-logo" width='50' height='50'/>
                     </div>
                     <div className='home-alert'>
-                        <Alert variant="warning">This app is currently available for authorized testers only.</Alert>
+                        <Alert variant="warning">This app is currently available for authorized testers only. {"\n"}<a href="https://github.com/DzakirinAsyraff/Astronomify#readme">Read More.</a></Alert>
                     </div>
                     <div className="home-header">
                         <div className="home-header-text">
