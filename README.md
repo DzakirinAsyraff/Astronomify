@@ -5,6 +5,7 @@
 ## Table of Content
 
  - [About](https://github.com/DzakirinAsyraff/Astronomify/tree/main#about)
+ - [Status](https://github.com/DzakirinAsyraff/Astronomify/tree/main#status)
  - [Current Issues](https://github.com/DzakirinAsyraff/Astronomify/tree/main#current-issues)
  - [Technologies Used](https://github.com/DzakirinAsyraff/Astronomify/tree/main#technologies-used)
  - [Screenshots](https://github.com/DzakirinAsyraff/Astronomify/tree/main#screenshots)
@@ -12,6 +13,10 @@
 ## About
 
 Astronomify calculates the average date of your Spotify top tracks release date and display the corresponding NASA's Astronomy Picture of the Day.
+
+## Status
+
+Astronomify is still not open to public use because Spotify requires developers to request a quota extension. As of right now, Spotify can only be used by authorized users (25 limit). If you're interesting in becoming a user, you can contact me via email.
 
 ## Current Issues
 
