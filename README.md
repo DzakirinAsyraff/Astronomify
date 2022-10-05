@@ -15,8 +15,7 @@ Astronomify calculates the average date of your Spotify top tracks release date 
 
 ## Current Issues
 
- - Refresh and back button leads to 404 error  
-	 - [ ] Solved?
+ - ~~Refresh and back button leads to 404 error~~  **SOLVED**
 
 ## Technologies Used
 
@@ -24,6 +23,8 @@ Astronomify calculates the average date of your Spotify top tracks release date 
  - CSS
  - JS
  - ReactJS
+ - Spotify Web API
+ - NASA APOD API
 
 ## Screenshots
 ![Homepage before Login with Spotify](https://raw.githubusercontent.com/DzakirinAsyraff/Astronomify/main/src/Assets/ss1.PNG)
