@@ -1,6 +1,7 @@
 import Home from './Pages/Home';
 import Main from './Pages/Main';
 import Final from './Pages/Final';
+import Artists from './Pages/Artists';
 import {Routes, Route} from 'react-router-dom';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
         <Route path="/Astronomify" element={<Home />} />
         <Route path="/Astronomify/main" element={<Main />} />
         <Route path="/Astronomify/final/:date" element={<Final />} />
+        <Route path='/Astronomify/artists' element={<Artists />} />
       </Routes>
     </div>
   );

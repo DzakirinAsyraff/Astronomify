@@ -5,7 +5,7 @@ import axios from 'axios';
 import { LocalDate, ChronoUnit, Period } from '@js-joda/core';
 import '../Styles/Main.css';
 
-function Success() {
+function Artists() {
 
     const [token, setToken] = useState("");
     const termArray = [
@@ -15,7 +15,7 @@ function Success() {
     ];
     const [termkey, setTermkey] = useState(0);
     const [limit, setLimit] = useState(10);
-    const [tracks, setTracks] = useState([]);
+    const [artists, setArtists] = useState([]);
     const [averageDate, setAverageDate] = useState("");
     const [isLoading, setIsLoading] = useState(true);
     const [isGo, setIsGo] = useState(false);
@@ -55,7 +55,7 @@ function Success() {
     const checkTrack = () => {
         setIsGo(true);
         validateLimit(limit);
-        axios.get(`https://api.spotify.com/v1/me/top/tracks`, {
+        axios.get(`https://api.spotify.com/v1/me/top/artists`, {
             headers: {
                 Authorization: `Bearer ${token}`
             },
@@ -66,7 +66,7 @@ function Success() {
         }).then(res => {
             // console.table(res.data.items)
             // console.table(res.data.items.album)
-            setTracks(res.data.items)
+            setArtists(res.data.items)
             setIsReady(true)
             setIsLoading(false);
             setIsError(false);
@@ -87,44 +87,44 @@ function Success() {
     //     return parsed;
     // }
 
-    useEffect(() => {
-        if (isReady){
-            let dates = []
-            for (let i = 0; i < tracks?.length; i++) {
-                dates.push(tracks[i]?.album.release_date)
-            }
-            dates.sort()
-            // console.log(dates)
-            let d1;
-            // d1 = checkDateLength(dates[0])
-            if(dates[0].length < 10) {
-                d1 = LocalDate.parse(dates[0] + "-01-01")
-            }
-            else {
-                d1 = LocalDate.parse(dates[0])
-            }
-            for (let i = 1; i<dates.length; i++) {
-                let d2;
-                if (dates[i].length < 10) {
-                    d2 = LocalDate.parse(dates[i] + "-01-01")
-                } 
-                else {
-                    d2 = LocalDate.parse(dates[i])
-                }
-                let diff = d1.until(d2, ChronoUnit.DAYS)
-                console.log(d2, d1, diff)
-                diff = Math.trunc(diff/2)
-                console.log("half diff", diff)
-                d1 = d1.plus(Period.ofDays(diff))
-                console.log(d1)
-            }
-            // console.log("final date: ", d1)
-            setAverageDate(d1.toString())
-            // console.log(d1.toString())
-            // console.log(averageDate)
-            setIsCalculated(true)
-        }
-    } , [isReady, tracks])
+    // useEffect(() => {
+    //     if (isReady){
+    //         let dates = []
+    //         for (let i = 0; i < tracks?.length; i++) {
+    //             dates.push(tracks[i]?.album.release_date)
+    //         }
+    //         dates.sort()
+    //         // console.log(dates)
+    //         let d1;
+    //         // d1 = checkDateLength(dates[0])
+    //         if(dates[0].length < 10) {
+    //             d1 = LocalDate.parse(dates[0] + "-01-01")
+    //         }
+    //         else {
+    //             d1 = LocalDate.parse(dates[0])
+    //         }
+    //         for (let i = 1; i<dates.length; i++) {
+    //             let d2;
+    //             if (dates[i].length < 10) {
+    //                 d2 = LocalDate.parse(dates[i] + "-01-01")
+    //             } 
+    //             else {
+    //                 d2 = LocalDate.parse(dates[i])
+    //             }
+    //             let diff = d1.until(d2, ChronoUnit.DAYS)
+    //             console.log(d2, d1, diff)
+    //             diff = Math.trunc(diff/2)
+    //             console.log("half diff", diff)
+    //             d1 = d1.plus(Period.ofDays(diff))
+    //             console.log(d1)
+    //         }
+    //         // console.log("final date: ", d1)
+    //         setAverageDate(d1.toString())
+    //         // console.log(d1.toString())
+    //         // console.log(averageDate)
+    //         setIsCalculated(true)
+    //     }
+    // } , [isReady, tracks])
 
 
     return ( 
@@ -190,25 +190,27 @@ function Success() {
                 {/* {columns.map((column, index) => {
                     return ( */}
                         {/* <Col> */}
-                            {tracks.map((track, index) => {
+                            {artists.map((artist, index) => {
                                 return (
                                     <Col>
                                     <Card bg='dark' key={index} className='mb-3 cardEntity'>
-                                        <Card.Header>{track.album.name}</Card.Header>
-                                        <Card.Img variant="top" src={track.album.images[1].url} />
+                                        {/* <Card.Header>{artist.genres[0]}</Card.Header> */}
+                                        <Card.Img variant="top" src={artist.images[1].url} />
                                         <Card.Body>
-                                            <Card.Title>{track.name} ({track.popularity})</Card.Title>
+                                            <Card.Title>{artist.name} ({artist.popularity})</Card.Title>
                                             <Card.Text>
-                                                {track.artists.map((artist, index) => {
+                                                {artist.genres.map((genre, index) => {
                                                     return (
-                                                        <div key={index}>{artist.name}</div>
+                                                        <div key={index}>{genre}</div>
                                                     )
                                                 } )}
                                             </Card.Text>
                                         </Card.Body>
-                                        <Card.Footer>
+
+                                        {/* <Card.Footer>
                                             <small className="text-muted">{track.album.release_date}</small>
-                                        </Card.Footer>
+                                        </Card.Footer> */}
+
                                     </Card>
                                     </Col>
                                 )
@@ -227,4 +229,4 @@ function Success() {
      );
 }
 
-export default Success;
+export default Artists;
